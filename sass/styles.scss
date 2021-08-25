@@ -48,6 +48,7 @@ img{
 }
 
 .tl{
+  grid-area:tl;
     background: url('../images/bg-pattern-quotation.svg') no-repeat 90% 0;
     background-color: purple;
 
@@ -59,6 +60,7 @@ img{
 }
 
 .tr{
+  grid-area:tr;
   background-color:$dark-grey;
 }
 
@@ -74,8 +76,16 @@ img{
     color:$dark-grey;
   }
 }
+.lb{
+  grid-area:lb;
+}
+
+.ra{
+  grid-area:ra;
+}
 
 .mb{
+  grid-area:mb;
   background-color:$black;
   img{
     border:3px solid $purple;
@@ -96,13 +106,16 @@ img{
 }
 
 @media screen and (min-width:1052px){
+  .main{
+    width:80%;
+  }
   .grid-container{
     display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows:500px 500px;
+    grid-template-columns: repeat(4, 1fr);
+    
     grid-template-areas:
-    'tl tl tl tl tl tl tr tr tr ra ra ra'
-    'lb lb lb mb mb mb mb mb mb ra ra ra'
+    'tl tl tr ra'
+    'lb mb mb ra'
     ;
   }
 }

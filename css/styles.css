@@ -47,6 +47,9 @@ img {
 }
 
 .tl {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tl;
   background: url("../images/bg-pattern-quotation.svg") no-repeat 90% 0;
   background-color: purple;
 }
@@ -56,6 +59,9 @@ img {
 }
 
 .tr {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tr;
   background-color: grey;
 }
 
@@ -75,7 +81,22 @@ img {
   color: grey;
 }
 
+.lb {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: lb;
+}
+
+.ra {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: ra;
+}
+
 .mb {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mb;
   background-color: black;
 }
 
@@ -93,13 +114,14 @@ img {
 }
 
 @media screen and (min-width: 1052px) {
+  .main {
+    width: 80%;
+  }
   .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 500px 500px;
-        grid-template-rows: 500px 500px;
-        grid-template-areas: 'tl tl tl tl tl tl tr tr tr ra ra ra' 'lb lb lb mb mb mb mb mb mb ra ra ra';
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 'tl tl tr ra' 'lb mb mb ra';
   }
 }
