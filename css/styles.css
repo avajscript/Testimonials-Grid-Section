@@ -7,9 +7,14 @@ body {
   background-color: #ebdede;
 }
 
+.main {
+  width: 90%;
+  margin: 10% auto;
+}
+
 h1 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -52,6 +57,30 @@ img {
 
 .tr {
   background-color: grey;
+}
+
+.lb, .ra {
+  background-color: white;
+}
+
+.lb h1, .ra h1 {
+  color: black;
+}
+
+.lb h2, .ra h2 {
+  color: grey;
+}
+
+.lb p, .ra p {
+  color: grey;
+}
+
+.mb {
+  background-color: black;
+}
+
+.mb img {
+  border: 3px solid purple;
 }
 
 .grid-container {
