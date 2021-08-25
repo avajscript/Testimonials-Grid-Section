@@ -10,7 +10,7 @@ body {
 h1 {
   color: white;
   font-size: 1.8rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 h2 {
@@ -31,20 +31,36 @@ p {
 .grid .name-container {
   display: inline-block;
   margin-left: 1rem;
+  vertical-align: middle;
 }
 
 img {
   display: inline-block;
   border-radius: 5rem;
   width: 40px;
+  vertical-align: middle;
 }
 
 .tl {
+  background: url("../images/bg-pattern-quotation.svg") no-repeat 90% 0;
   background-color: purple;
 }
 
 .tl img {
   border: 3px solid grey;
+}
+
+.tr {
+  background-color: grey;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: 'tl' 'tr' 'lb' 'mb' 'ra';
+  gap: 2rem;
 }
 
 @media screen and (min-width: 1052px) {
@@ -55,6 +71,6 @@ img {
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: 500px 500px;
         grid-template-rows: 500px 500px;
-        grid-template-areas: 'tl tl tl tl tl tl tr tr tr ra ra ra' 'lb lb lb bm bm bm bm bm bm ra ra ra';
+        grid-template-areas: 'tl tl tl tl tl tl tr tr tr ra ra ra' 'lb lb lb mb mb mb mb mb mb ra ra ra';
   }
 }
