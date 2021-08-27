@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ebdede;
+  background-color: #ecf2f8;
   font-family: Barlow;
   font-size: 16px;
 }
@@ -12,6 +12,7 @@ body {
 .main {
   width: 90%;
   margin: 10% auto;
+  height: 70%;
 }
 
 h1 {

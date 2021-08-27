@@ -8,7 +8,7 @@ $light-grey: hsl(0, 0%, 81%);
 }
 
 body {
-  background-color: #ebdede;
+  background-color: hsl(210, 46%, 95%);
   font-family: Barlow;
   font-size: 16px;
 }
@@ -16,6 +16,7 @@ body {
 .main {
   width: 90%;
   margin: 10% auto;
+  height: 70%;
 }
 h1 {
   color: white;
